@@ -14,7 +14,7 @@ namespace testrun2
         
     {
         public Point mouseLocation;
-        private string filePath = @"D:\Steam\steamapps\common\ARK\Engine\Config\BaseDeviceProfiles.ini";
+        private string filePath = @"D:\SteamLibrary\steamapps\common\ARK\Engine\Config\BaseDeviceProfiles.ini";
         public ReaperV1()
         {
             InitializeComponent();
@@ -28,7 +28,7 @@ namespace testrun2
             string soundFilePath = "C:\\Users\\cedri\\Desktop\\Main\\HobbyStuff\\Coding\\C#\\testrun\\testrun2\\Properties\\launchsound.wav";
 
             SoundPlayer soundPlayer = new SoundPlayer(soundFilePath);
-            soundPlayer.Play();
+            //soundPlayer.Play(); 
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -116,8 +116,8 @@ namespace testrun2
         {
             try
             {
-                Process.Start("D:\\Steam\\steamapps\\common\\ARK\\Engine\\Config\\BaseDeviceProfiles.ini");
-            }
+                Process.Start("D:\\SteamLibrary\\steamapps\\common\\ARK\\Engine\\Config\\BaseDeviceProfiles.ini");
+            }                  
             catch (Exception ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message);
@@ -140,7 +140,7 @@ namespace testrun2
         {
             try
             {
-                Process.Start("D:\\Steam\\steamapps\\common\\ARK\\ShooterGame\\Saved\\MyPaintings");
+                Process.Start("D:\\SteamLibrary\\steamapps\\common\\ARK\\ShooterGame\\Saved\\MyPaintings");
             }
             catch (Exception ex)
             {
@@ -206,7 +206,7 @@ namespace testrun2
 
         private void Create_INI_File_Click(object sender, EventArgs e)
         {
-            string path = @"D:\Steam\steamapps\common\ARK\Engine\Config\BaseDeviceProfiles.ini";
+            string path = @"D:\SteamLibrary\steamapps\common\ARK\Engine\Config\BaseDeviceProfiles.ini";
 
             try
             {
@@ -232,7 +232,7 @@ namespace testrun2
             Dictionary<string, string[]> folderPathsAndFileNames = new Dictionary<string, string[]>
     {
         {
-            @"D:\Steam\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponHarpoon\Textures", new string[]
+            @"D:\SteamLibrary\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponHarpoon\Textures", new string[]
             {
                 "T_HarpoonProjectile_Net_N.uasset",
                 "T_HarpoonProjectile_Net_Layered.uasset",
@@ -249,7 +249,7 @@ namespace testrun2
             }
         },
         {
-            @"D:\Steam\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponCompoundBow\Textures", new string[]
+            @"D:\SteamLibrary\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponCompoundBow\Textures", new string[]
             {
                 "T_CompoundBow_Colorize_d.uasset",
                 "T_CompoundBow_Colorize_m.uasset",
@@ -258,14 +258,14 @@ namespace testrun2
             }
         },
             {
-            @"D:\Steam\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponHatchet\Colorization", new string[]
+            @"D:\SteamLibrary\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponHatchet\Colorization", new string[]
             {
                 "Hatchet_colorize_m.uasset",
                 "Hatchet_colorize_d.uasset"
             }
         },
         {
-            @"D:\Steam\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\Human\Male\Outfits\TekGen2", new string[]
+            @"D:\SteamLibrary\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\Human\Male\Outfits\TekGen2", new string[]
             {
                 "tekGen2_armor_male_shoes.uasset",
                 "tekGen2_armor_male_shirt.uasset",
@@ -287,7 +287,7 @@ namespace testrun2
             }
         },
         {
-            @"D:\Steam\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\Human\Male\Outfits\TekGen2\Textures", new string[]
+            @"D:\SteamLibrary\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\Human\Male\Outfits\TekGen2\Textures", new string[]
             {
                 "T_Gen2_TekHelmet_bc.uasset",
                 "T_Gen2_TekHelmet_LightMask.uasset",
@@ -324,7 +324,7 @@ namespace testrun2
             }
         },
         {
-            @"D:\Steam\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\Human\Male\Outfits\Tek", new string[]
+            @"D:\SteamLibrary\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\Human\Male\Outfits\Tek", new string[]
             {
                 "HUD_Tek_Boots_Colorized_MIC.uasset",
                 "HUD_Tek_Colorized_MIC.uasset",
@@ -352,7 +352,7 @@ namespace testrun2
             }
         },
         {
-            @"D:\Steam\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\Human\Male\Outfits\Tek\Textures", new string[]
+            @"D:\SteamLibrary\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\Human\Male\Outfits\Tek\Textures", new string[]
             {
                 "jetpack_Layered.uasset",
                 "jetpack_N.uasset",
@@ -385,7 +385,7 @@ namespace testrun2
             }
         },
         {
-            @"D:\Steam\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\Human\Male\Outfits\Metal", new string[]
+            @"D:\SteamLibrary\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\Human\Male\Outfits\Metal", new string[]
             {
                 "Male_FPV_Metal_Gloves.uasset",
                 "Male_Metal_Gloves.uasset",
@@ -398,7 +398,7 @@ namespace testrun2
             }
         },
         {
-            @"D:\Steam\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\Human\Male\Outfits\Metal\Textures", new string[]
+            @"D:\SteamLibrary\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\Human\Male\Outfits\Metal\Textures", new string[]
             {
                 "Male_Metal_Boots_Layered.uasset",
                 "Male_Metal_Boots_N.uasset",
@@ -422,7 +422,7 @@ namespace testrun2
             }
         },
         {
-            @"D:\Steam\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponC4", new string[]
+            @"D:\SteamLibrary\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponC4", new string[]
             {
                 "detonator_TPV_RIG_Skeleton.uasset",
                 "detonator_TPV_RIG.uasset",
@@ -435,7 +435,7 @@ namespace testrun2
             }
         },
         {
-            @"D:\Steam\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponC4\Textures", new string[]
+            @"D:\SteamLibrary\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponC4\Textures", new string[]
             {
                 "C4Detonator_E.uasset",
                 "C4Detonator_layered.uasset",
@@ -447,7 +447,7 @@ namespace testrun2
             }
         },
         {
-            @"D:\Steam\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponCompoundBow", new string[]
+            @"D:\SteamLibrary\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponCompoundBow", new string[]
             {
                 "compoundArrow_SM.uasset",
                 "CompoundBow_Colorize_MIC.uasset",
@@ -462,7 +462,7 @@ namespace testrun2
             }
         },
         {
-            @"D:\Steam\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponCompoundBow\Textures", new string[]
+            @"D:\SteamLibrary\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponCompoundBow\Textures", new string[]
             {
                 "HUD_MachinedBow_Colorize_d.uasset",
                 "HUD_MachinedBow_Colorize_m.uasset",
@@ -473,7 +473,7 @@ namespace testrun2
             }
         },
         {
-            @"D:\Steam\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponCrossbow", new string[]
+            @"D:\SteamLibrary\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponCrossbow", new string[]
             {
                 "crossbow_FPV_AnimBlueprint.uasset",
                 "crossbow_FPV_RIG.uasset",
@@ -485,7 +485,7 @@ namespace testrun2
             }
         },
         {
-            @"D:\Steam\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponCrossbow\Textures", new string[]
+            @"D:\SteamLibrary\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponCrossbow\Textures", new string[]
             {
                 "Crossbow_Arrow_Metal_D.uasset",
                 "Crossbow_Arrow_Metal_Layered.uasset",
@@ -505,7 +505,7 @@ namespace testrun2
             }
         },
         {
-            @"D:\Steam\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponHarpoon", new string[]
+            @"D:\SteamLibrary\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponHarpoon", new string[]
             {
                 "Arrow_MIC.uasset",
                 "Harpoon_Colorize_MIC.uasset",
@@ -521,7 +521,7 @@ namespace testrun2
             }
         },
         {
-            @"D:\Steam\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponHarpoon\Textures", new string[]
+            @"D:\SteamLibrary\steamapps\common\ARK\ShooterGame\Content\PrimalEarth\WeaponHarpoon\Textures", new string[]
             {
                 "harpoon_Colorize_d.uasset",
                 "harpoon_Colorize_m.uasset",
